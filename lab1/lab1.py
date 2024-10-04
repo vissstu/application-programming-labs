@@ -1,6 +1,7 @@
 import re
 import argparse
 
+
 def open_file(filename: str):
     """
     This function opens and reads the file in one line
