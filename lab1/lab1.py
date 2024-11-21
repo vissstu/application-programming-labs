@@ -9,7 +9,7 @@ def open_file(filename: str):
     :return: reworked text in one line
     """
     with open(filename, "r", encoding="utf-8") as file:
-     text = file.read()
+        text = file.read()
     return text
 
 
@@ -33,7 +33,7 @@ def find_man(text: str) -> int:
     """
     pattern = r"Мужской"
     man = re.findall(pattern, text)
-    return (len(man))
+    return len(man)
 
 
 def main():
