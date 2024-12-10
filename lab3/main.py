@@ -13,11 +13,11 @@ def main():
 
 		display_img(original_image, "Image1")
 
-		combined_image=comawd_images(original_image,800,700)
-		display_img(combined_image,"Image comad")
+		combined=comawd_images(original_image,800,700)
+		display_img(combined,"Image comad")
 
 
-		save_image(combined_image, arg.output)
+		save_image(combined, arg.output)
 	except Exception as e:
 		print(e)
 
